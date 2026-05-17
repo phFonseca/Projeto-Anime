@@ -5,12 +5,6 @@
 	--secondary-background: #465362;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 @font-face {
 	font-family: 'Montserrat';
 	src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
@@ -26,6 +20,12 @@
 		url('truetype');
 	font-weight: normal;
 	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -74,6 +74,7 @@ header {
 	border-radius: 3px;
 	padding: 15px;
 	display: flex;
+	gap: 30px;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 30px;
@@ -82,8 +83,25 @@ header {
 	background-color: var(--secondary-background);
 }
 
-.container_filho {
-	margin-bottom: 30px;
+.container img {
+	object-fit: contain;
+	width: 100%;
+}
+
+.container h3 {
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.container p {
+	line-height: 1.5rem;
+}
+
+.container strong {
+	color: var(--red);
+}
+
+.white {
 	color: var(--text-white);
 }
 
@@ -101,9 +119,6 @@ header {
 	border-radius: 4px;
 
 	text-align: center;
-	/* font-size: 32px; */
-	/* width: 220px; */
-	/* margin: 36px; */
 }
 
 .button {
@@ -144,16 +159,6 @@ header {
 	margin-right: 10px;
 }
 
-.container img {
-	object-fit: contain;
-	width: 300px;
-	height: 300px;
-}
-
-.container h3 {
-	text-align: center;
-}
-
 .title {
 	color: var(--red);
 	font-family: 'Roboto';
@@ -170,7 +175,6 @@ footer {
 	align-items: center;
 	justify-content: space-between;
 	color: #f1f1f1;
-	/* gap: 30px; */
 }
 
 .footer_contact {
@@ -192,4 +196,37 @@ footer {
 	display: flex;
 	align-items: center;
 	gap: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+	nav {
+		display: none;
+		padding-bottom: 30px;
+	}
+
+	.main_container {
+		margin: 30px auto;
+		width: 80%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.container {
+		border: 1px solid var(--red);
+		border-radius: 3px;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		width: 100%;
+		flex-direction: column;
+		background-color: var(--secondary-background);
+	}
+
+	.container img {
+		object-fit: contain;
+		width: 100%;
+	}
 }

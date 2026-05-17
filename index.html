@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+		/>
 		<title>Classificação de Animes</title>
 	</head>
 	<body>
@@ -13,100 +17,99 @@
 				<h1 class="title">Melhores Animes</h1>
 
 				<!-- navegação -->
-				<nav>
-					<ul class="navigation_list">
-						<li>
-							<a href="dragon-ball.html">Dragon Ball</a>
-						</li>
-						<li>
-							<a href="pokemon.html">Pokémon</a>
-						</li>
-						<li>
-							<a href="saint-seiya.html">Saint Seiya</a>
-						</li>
-						<li>
-							<a href="yu-gi-oh.html">Yu-gi-oh</a>
-						</li>
-					</ul>
-				</nav>
+				<span
+					class="material-symbols-outlined hamburguer"
+					onclick="clickMenu()"
+				>
+					menu
+				</span>
 			</div>
+			<nav id="menu">
+				<ul class="navigation_list">
+					<li>
+						<a href="dragon-ball.html">Dragon Ball</a>
+					</li>
+					<li>
+						<a href="beyblade.html">Beyblade</a>
+					</li>
+					<li>
+						<a href="saint-seiya.html">Saint Seiya</a>
+					</li>
+					<li>
+						<a href="yu-gi-oh.html">Yu-gi-oh</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 
 		<!-- conteudo do html -->
 		<div class="main_container">
 			<div class="container">
-				<img
-					src="assets/img/6846_dragon_ball_z_hd_wallpapers.jpg"
-					alt="Girl in a jacket"
-					width="300"
-					height="300"
-				/>
-				<h3 class="container_filho title">Dragon Ball Z</h3>
-				<p class="container_filho">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-					consectetur, laborum perspiciatis earum deleniti non nobis animi, quam
-					maxime fugit ducimus pariatur delectus recusandae ad sapiente sint?
-					Asperiores, nesciunt nostrum.
+				<img src="assets/img/beyblade-small.jpg" alt="Girl in a jacket" />
+				<h3 class="title">Beyblade</h3>
+				<p class="white">
+					<strong>Beyblade</strong> um anime focado em batalhas entre piões
+					especiais chamados Beyblades. A história acompanha jovens bladeres que
+					competem em torneios usando habilidade, estratégia e a força
+					espiritual de criaturas presentes em seus piões. O protagonista da
+					série clássica é Tyson Granger, líder da equipe Bladebreakers,
+					acompanhado de personagens como Kai Hiwatari, Ray Kon e Max Tate.
 				</p>
-				<button class="container_filho button">
+				<button class="white button">
+					<a href="beyblade.html" id="link_title">Veja Mais</a>
+				</button>
+			</div>
+
+			<!-- divisao -->
+			<div class="container">
+				<img src="assets/img/dragon-ball-z-small.jpg" alt="Girl in a jacket" />
+				<h3 class="title">Dragon Ball</h3>
+				<p class="white">
+					Dragon Ball é um anime e mangá criado por
+					<strong>Akira Toriyama</strong> que acompanha a infância de Goku, um
+					garoto com força extraordinária e cauda de macaco que vive diversas
+					aventuras enquanto procura as lendárias Esferas do Dragão. Ao lado de
+					amigos como Bulma, Kuririn e Mestre Kame, Goku enfrenta inimigos
+					poderosos, participa de torneios de artes marciais e evolui
+					constantemente como lutador.
+				</p>
+				<button class="white button">
 					<a href="dragon-ball.html" id="link_title"> Veja Mais </a>
 				</button>
 			</div>
 
 			<!-- divisao -->
 			<div class="container">
-				<img
-					src="assets/img/ash_and_his_pokemon__by_winxflorabloomroxy-d71kp9e.png"
-					alt="Girl in a jacket"
-					width="300"
-					height="300"
-				/>
-				<h3 class="container_filho title">Pokémon</h3>
-				<p class="container_filho">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse vitae
-					sunt laboriosam architecto labore ipsum facilis tempore repudiandae
-					repellat? Voluptatibus accusamus sint ullam voluptas consequuntur
-					harum beatae nam, commodi voluptate!
+				<img src="assets/img/saint-seiya-small.jpg" alt="Girl in a jacket" />
+				<h3 class="title">Saint Seiya</h3>
+				<p class="white">
+					Saint Seiya, conhecido no Brasil como
+					<strong>“Os Cavaleiros do Zodíaco”</strong>, é um anime criado por
+					<strong>Masami Kurumada</strong> que acompanha jovens guerreiros
+					chamados Cavaleiros, responsáveis por proteger a deusa Athena. O
+					protagonista é Seiya, o Cavaleiro de Bronze de Pégaso, que luta ao
+					lado de companheiros como Shiryu, Hyoga, Shun e Ikki.
 				</p>
-				<button class="container_filho button">
-					<a href="pokemon.html" id="link_title">Veja Mais</a>
-				</button>
-			</div>
-
-			<!-- divisao -->
-			<div class="container">
-				<img
-					src="assets/img/saint-seiya.jpg"
-					alt="Girl in a jacket"
-					width="300"
-					height="300"
-				/>
-				<h3 class="container_filho title">Saint Seiya</h3>
-				<p class="container_filho">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse vitae
-					sunt laboriosam architecto labore ipsum facilis tempore repudiandae
-					repellat? Voluptatibus accusamus sint ullam voluptas consequuntur
-					harum beatae nam, commodi voluptate!
-				</p>
-				<button class="container_filho button">
+				<button class="white button">
 					<a href="saint-seiya.html" id="link_title">Veja mais</a>
 				</button>
 			</div>
 			<!-- divisao -->
 			<div class="container">
 				<img
-					src="assets/img/yuu_gi_ou__duel_monsters6.jpg"
+					src="assets/img/yu-gi-oh-duel-monsters-small.jpg"
 					alt="Girl in a jacket"
-					width="300"
-					height="300"
 				/>
-				<h3 class="container_filho title">Yu-gi-oh! Duel Monsters</h3>
-				<p class="container_filho">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga
-					voluptatum possimus temporibus sed nulla assumenda itaque repellat,
-					qui commodi, odit nemo id non eaque quam obcaecati ea aliquid quas.
+				<h3 class="title">Yu-gi-oh! Duel Monsters</h3>
+				<p class="white">
+					Yu-Gi-Oh! é um anime criado por <strong>Kazuki Takahashi</strong> que
+					mistura aventura, estratégia e batalhas através de jogos de cartas. A
+					história acompanha Yugi Muto, um garoto tímido que resolve o Enigma do
+					Milênio e desperta o espírito de um antigo faraó. Junto de seus
+					amigos, Yugi enfrenta rivais e vilões em duelos usando monstros,
+					magias e armadilhas no jogo Duel Monsters.
 				</p>
-				<button class="container_filho button">
+				<button class="white button">
 					<a href="yu-gi-oh.html" id="link_title"> Veja mais </a>
 				</button>
 			</div>
@@ -114,7 +117,7 @@
 	</body>
 	<footer>
 		<div class="footer_info">
-			<img src="assets/img/logo.png" alt="Logo Pedro Fonseca" width="210px" />
+			<img src="assets/img/logo.png" alt="Logo Pedro Fonseca" width="100px" />
 			<div class="footer_contact">
 				<h3>Contato</h3>
 				<ul>
@@ -152,4 +155,13 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+		function clickMenu() {
+			if (menu.style.display == 'block') {
+				menu.style.display = 'none'
+			} else {
+				menu.style.display = 'block'
+			}
+		}
+	</script>
 </html>
